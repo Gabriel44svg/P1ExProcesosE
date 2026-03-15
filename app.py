@@ -13,7 +13,7 @@ st.set_page_config(page_title="Generador de Examen Estocásticos", layout="wide"
 st.title(" Resolución Interactiva: Procesos Estocásticos")
 st.markdown("Ingresa un número de cuenta. La aplicación resolverá el examen paso a paso mostrando la teoría y te entregará el código LaTeX completo listo para compilar.")
 
-cuenta = st.text_input("Ingresa el número de cuenta (mínimo 6 dígitos):", "424103965")
+cuenta = st.text_input("Ingresa el número de cuenta (mínimo 6 dígitos Max 9 dígitos):", "424104976")
 
 if st.button("Generar Solución y LaTeX"):
     if len(cuenta) >= 6 and cuenta.isdigit():
